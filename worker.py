@@ -1,4 +1,5 @@
 import argparse
+<<<<<<< HEAD
 import asyncio
 import aiohttp
 from aiohttp import web
@@ -12,10 +13,19 @@ class Worker:
     """Processes log chunks and reports results"""
     
     def __init__(self, worker_id: str, port: int, coordinator_url: str):
+=======
+
+
+class Worker:
+    """Processes log chunks and reports results"""
+    
+    def __init__(self, port: int, worker_id: str, coordinator_url: str):
+>>>>>>> f9f616e5113d2b9cf80789f4024f6db869e36bef
         self.worker_id = worker_id
         self.coordinator_url = coordinator_url
         self.port = port
     
+<<<<<<< HEAD
     async def start(self) -> None:
         """Start the worker server and begin processing"""
         logger.info(f"Starting worker {self.worker_id} on port {self.port}...")
@@ -91,9 +101,31 @@ class Worker:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Log Analyzer Worker")
     parser.add_argument("--port", type=int, default=8001, help="Worker port")
+=======
+    def start(self) -> None:
+        """Start worker server"""
+        print(f"Starting worker {self.worker_id} on port {self.port}...")
+        pass
+
+    async def process_chunk(self, filepath: str, start: int, size: int) -> dict:
+        """Process a chunk of log file and return metrics"""
+        pass
+
+    async def report_health(self) -> None:
+        """Send heartbeat to coordinator"""
+        pass
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Log Analyzer Coordinator")
+    parser.add_argument("--port", type=int, default=8000, help="Coordinator port")
+>>>>>>> f9f616e5113d2b9cf80789f4024f6db869e36bef
     parser.add_argument("--id", type=str, default="worker1", help="Worker ID")
     parser.add_argument("--coordinator", type=str, default="http://localhost:8000", help="Coordinator URL")
     args = parser.parse_args()
 
     worker = Worker(port=args.port, worker_id=args.id, coordinator_url=args.coordinator)
+<<<<<<< HEAD
     asyncio.run(worker.start())
+=======
+    worker.start()
+>>>>>>> f9f616e5113d2b9cf80789f4024f6db869e36bef
