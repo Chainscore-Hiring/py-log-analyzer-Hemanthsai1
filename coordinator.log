@@ -1,0 +1,422 @@
+2024-11-29 19:35:03,466 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:35:03,480 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:35:03,481 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:35:03,481 - coordinator - INFO - Starting coordinator on port 8000...
+2024-11-29 19:38:45,491 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:38:45,492 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:38:45,494 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:44:47,970 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:44:47,971 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:44:47,972 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:47:31,547 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:47:31,548 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:47:31,549 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:47:47,762 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:47:47,763 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:47:47,763 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:47:59,661 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 19:47:59,662 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 19:47:59,662 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 19:47:59,720 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-29 23:18:29,893 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 23:18:29,894 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 23:18:29,895 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 23:18:29,925 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-29 23:34:11,814 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 23:34:11,815 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 23:34:11,816 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 23:34:11,846 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-29 23:37:34,127 - coordinator - INFO - Incoming request: {
+
+  "filepath": "path/to/your/logfile.log"
+
+}
+
+
+2024-11-29 23:37:34,146 - coordinator - ERROR - Error in distribute_work: [WinError 3] The system cannot find the path specified: 'path/to/your/logfile.log'
+2024-11-29 23:38:53,239 - coordinator - INFO - Incoming request: {
+
+  "filepath": "path/to/your/logfile.log"
+
+}
+
+
+2024-11-29 23:38:53,247 - coordinator - ERROR - Error in distribute_work: [WinError 3] The system cannot find the path specified: 'path/to/your/logfile.log'
+2024-11-29 23:41:02,848 - coordinator - INFO - Incoming request: {
+
+    "filepath": "test_vectors/logs/normal.log"
+
+}
+
+
+2024-11-29 23:41:02,884 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 6 chunks
+2024-11-29 23:41:02,886 - coordinator - INFO - Sending chunk from 0 to 2 to Worker worker1
+2024-11-29 23:41:05,502 - coordinator - ERROR - Error in distribute_work: Cannot connect to host localhost:8001 ssl:default [The remote computer refused the network connection]
+2024-11-29 23:43:05,295 - coordinator - INFO - Incoming request: {
+
+    "filepath": "test_vectors/logs/normal.log"
+
+}
+
+
+2024-11-29 23:43:05,306 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 6 chunks
+2024-11-29 23:43:05,306 - coordinator - INFO - Sending chunk from 0 to 2 to Worker worker1
+2024-11-29 23:43:07,614 - coordinator - ERROR - Error in distribute_work: Cannot connect to host localhost:8001 ssl:default [The remote computer refused the network connection]
+2024-11-29 23:43:20,529 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 23:43:20,532 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 23:43:20,532 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 23:43:20,562 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-29 23:43:52,479 - coordinator - INFO - Incoming request: {
+
+    "filepath": "log-analyzer-assessment/test_vectors/logs/normal.log"
+
+}
+
+
+2024-11-29 23:43:52,482 - coordinator - ERROR - Error in distribute_work: [WinError 3] The system cannot find the path specified: 'log-analyzer-assessment/test_vectors/logs/normal.log'
+2024-11-29 23:45:12,481 - coordinator - INFO - Incoming request: {
+
+    "filepath": "C:/Users/heman/Desktop/log-analyzer-assessment/test_vectors/logs/normal.log"
+
+}
+
+
+2024-11-29 23:45:12,486 - coordinator - INFO - File C:/Users/heman/Desktop/log-analyzer-assessment/test_vectors/logs/normal.log has been split into 6 chunks
+2024-11-29 23:45:12,487 - coordinator - INFO - Sending chunk from 0 to 2 to Worker worker1
+2024-11-29 23:45:14,840 - coordinator - ERROR - Error in distribute_work: Cannot connect to host localhost:8001 ssl:default [The remote computer refused the network connection]
+2024-11-29 23:50:35,105 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-29 23:50:35,106 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-29 23:50:35,107 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-29 23:50:35,296 - coordinator - INFO - Coordinator listening on port 8001...
+2024-11-30 10:51:21,069 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 10:51:21,072 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 10:51:21,073 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 10:51:21,275 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-30 11:00:18,586 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 11:00:18,587 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 11:00:18,587 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 11:00:18,613 - coordinator - INFO - Coordinator listening on port 8001...
+2024-11-30 11:26:52,348 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 11:26:52,349 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 11:26:52,350 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 11:26:52,386 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-30 11:29:53,763 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-11-30 11:29:53,765 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-11-30 11:29:56,195 - coordinator - ERROR - Network error while sending chunk to Worker worker1: Cannot connect to host localhost:8001 ssl:default [The remote computer refused the network connection]
+2024-11-30 11:29:56,197 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-11-30 11:29:58,511 - coordinator - ERROR - Network error while sending chunk to Worker worker2: Cannot connect to host localhost:8002 ssl:default [The remote computer refused the network connection]
+2024-11-30 11:29:58,513 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-11-30 11:30:00,809 - coordinator - ERROR - Network error while sending chunk to Worker worker3: Cannot connect to host localhost:8003 ssl:default [The remote computer refused the network connection]
+2024-11-30 11:37:56,976 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 11:37:56,977 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 11:37:56,978 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 11:37:57,007 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-30 11:40:10,500 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-11-30 11:40:10,505 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-11-30 11:40:10,540 - coordinator - INFO - Chunk sent successfully to Worker worker1
+2024-11-30 11:40:10,548 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-11-30 11:40:10,571 - coordinator - INFO - Chunk sent successfully to Worker worker2
+2024-11-30 11:40:10,573 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-11-30 11:40:11,068 - coordinator - INFO - Chunk sent successfully to Worker worker3
+2024-11-30 11:53:37,397 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:01:02,459 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:05:36,277 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-11-30 12:05:36,281 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-11-30 12:05:36,627 - coordinator - INFO - Chunk sent successfully to Worker worker1
+2024-11-30 12:05:36,963 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-11-30 12:05:37,201 - coordinator - INFO - Chunk sent successfully to Worker worker2
+2024-11-30 12:05:37,211 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-11-30 12:05:37,386 - coordinator - INFO - Chunk sent successfully to Worker worker3
+2024-11-30 12:08:59,836 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:09:32,509 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:12:06,750 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-11-30 12:12:06,755 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-11-30 12:12:06,926 - coordinator - INFO - Chunk sent successfully to Worker worker1
+2024-11-30 12:12:06,929 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-11-30 12:12:07,043 - coordinator - INFO - Chunk sent successfully to Worker worker2
+2024-11-30 12:12:07,046 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-11-30 12:12:07,284 - coordinator - INFO - Chunk sent successfully to Worker worker3
+2024-11-30 12:13:06,564 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:15:35,003 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 12:16:05,590 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 16:19:29,053 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 16:20:59,217 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.05, 'avg_response_time': 150, 'request_count_per_second': 1000}
+2024-11-30 16:42:09,547 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 16:42:09,548 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 16:42:09,548 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 16:42:09,590 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-30 16:47:08,837 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker1",
+
+  "metrics": {
+
+    "error_rate": 0.02,
+
+    "avg_response_time": 150.5,
+
+    "request_count_per_second": 30
+
+  }
+
+}
+
+
+2024-11-30 16:47:08,862 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}}
+2024-11-30 16:47:08,871 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}
+2024-11-30 16:48:18,284 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker2",
+
+  "metrics": {
+
+    "error_rate": 0.01,
+
+    "avg_response_time": 120.3,
+
+    "request_count_per_second": 35
+
+  }
+
+}
+2024-11-30 16:48:18,287 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker2', 'metrics': {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35}}
+2024-11-30 16:48:18,288 - coordinator - INFO - Received results from Worker worker2: {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35}
+2024-11-30 16:48:25,673 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker1",
+
+  "metrics": {
+
+    "error_rate": 0.02,
+
+    "avg_response_time": 150.5,
+
+    "request_count_per_second": 30
+
+  }
+
+}
+
+
+2024-11-30 16:48:25,675 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}}
+2024-11-30 16:48:25,676 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}
+2024-11-30 16:50:07,235 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker2",
+
+  "metrics": {
+
+    "error_rate": 0.01,
+
+    "avg_response_time": 120.3,
+
+    "request_count_per_second": 35.0
+
+  }
+
+}
+
+
+2024-11-30 16:50:07,241 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker2', 'metrics': {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35.0}}
+2024-11-30 16:50:07,245 - coordinator - INFO - Received results from Worker worker2: {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35.0}
+2024-11-30 16:50:17,029 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker3",
+
+  "metrics": {
+
+    "error_rate": 0.015,
+
+    "avg_response_time": 135.0,
+
+    "request_count_per_second": 32.8
+
+  }
+
+}
+
+
+2024-11-30 16:50:17,034 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker3', 'metrics': {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}}
+2024-11-30 16:50:17,035 - coordinator - INFO - Received results from Worker worker3: {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}
+2024-11-30 16:50:17,036 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 16:51:54,794 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker1",
+
+  "metrics": {
+
+    "error_rate": 0.02,
+
+    "avg_response_time": 150.5,
+
+    "request_count_per_second": 30
+
+  }
+
+}
+
+
+2024-11-30 16:51:54,797 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}}
+2024-11-30 16:51:54,798 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}
+2024-11-30 16:51:54,799 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 16:52:36,828 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker2",
+
+  "metrics": {
+
+    "error_rate": 0.01,
+
+    "avg_response_time": 120.3,
+
+    "request_count_per_second": 35.0
+
+  }
+
+}
+
+
+2024-11-30 16:52:36,838 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker2', 'metrics': {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35.0}}
+2024-11-30 16:52:36,840 - coordinator - INFO - Received results from Worker worker2: {'error_rate': 0.01, 'avg_response_time': 120.3, 'request_count_per_second': 35.0}
+2024-11-30 16:52:36,848 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 16:53:20,070 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker3",
+
+  "metrics": {
+
+    "error_rate": 0.015,
+
+    "avg_response_time": 135.0,
+
+    "request_count_per_second": 32.8
+
+  }
+
+}
+2024-11-30 16:53:20,079 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker3', 'metrics': {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}}
+2024-11-30 16:53:20,080 - coordinator - INFO - Received results from Worker worker3: {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}
+2024-11-30 16:53:20,081 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 17:12:36,480 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2672005940864'>
+2024-11-30 17:12:36,488 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:12:36,503 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:12:36,567 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:12:36,703 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:12:36,791 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:14:03,287 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2343575969216'>
+2024-11-30 17:14:03,289 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:14:03,290 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:14:03,324 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:14:03,348 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:14:03,369 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:15:37,946 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker3",
+
+  "metrics": {
+
+    "error_rate": 0.015,
+
+    "avg_response_time": 135.0,
+
+    "request_count_per_second": 32.8
+
+  }
+
+}
+2024-11-30 17:15:37,966 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker3', 'metrics': {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}}
+2024-11-30 17:15:37,968 - coordinator - INFO - Received results from Worker worker3: {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}
+2024-11-30 17:15:37,974 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 17:22:00,817 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2348251610528'>
+2024-11-30 17:22:00,868 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:22:00,878 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:22:00,910 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:22:01,031 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:22:01,056 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:24:31,765 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2910904876688'>
+2024-11-30 17:24:31,766 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:24:31,769 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:24:31,822 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:24:31,852 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:24:31,875 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:26:17,687 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2580291747664'>
+2024-11-30 17:26:17,687 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:26:17,704 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:26:17,715 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:26:17,764 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:26:17,797 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:34:59,361 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2503382889392'>
+2024-11-30 17:34:59,366 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:34:59,394 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:34:59,423 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:34:59,462 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:34:59,515 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 17:39:17,482 - coordinator - INFO - Raw request body: <AsyncMock name='mock.text()' id='2267741488336'>
+2024-11-30 17:39:17,484 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}}
+2024-11-30 17:39:17,485 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.01, 'avg_response_time': 100.5, 'request_count_per_second': 30}
+2024-11-30 17:39:17,517 - coordinator - INFO - Worker worker1 is healthy
+2024-11-30 17:39:17,565 - coordinator - INFO - Sending chunk from 0 to 10 to Worker worker1
+2024-11-30 17:39:17,602 - coordinator - ERROR - Unexpected error while sending chunk to Worker worker1: 'coroutine' object does not support the asynchronous context manager protocol
+2024-11-30 18:15:20,734 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker3",
+
+  "metrics": {
+
+    "error_rate": 0.015,
+
+    "avg_response_time": 135.0,
+
+    "request_count_per_second": 32.8
+
+  }
+
+}
+2024-11-30 18:15:20,922 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker3', 'metrics': {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}}
+2024-11-30 18:15:20,941 - coordinator - INFO - Received results from Worker worker3: {'error_rate': 0.015, 'avg_response_time': 135.0, 'request_count_per_second': 32.8}
+2024-11-30 18:15:20,944 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 18:19:04,658 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-11-30 18:19:04,684 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-11-30 18:19:05,630 - coordinator - INFO - Chunk sent successfully to Worker worker1
+2024-11-30 18:19:05,651 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-11-30 18:19:06,760 - coordinator - INFO - Chunk sent successfully to Worker worker2
+2024-11-30 18:19:06,801 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-11-30 18:19:07,185 - coordinator - INFO - Chunk sent successfully to Worker worker3
+2024-11-30 18:19:20,206 - coordinator - INFO - Raw request body: {
+
+  "worker_id": "worker1",
+
+  "metrics": {
+
+    "error_rate": 0.02,
+
+    "avg_response_time": 150.5,
+
+    "request_count_per_second": 30
+
+  }
+
+}
+
+
+2024-11-30 18:19:20,209 - coordinator - INFO - Parsed JSON: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}}
+2024-11-30 18:19:20,210 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}
+2024-11-30 18:19:20,211 - coordinator - INFO - All workers completed. Aggregated metrics: {'error_rate': 0.015, 'avg_response_time': 135.26666666666668, 'request_count_per_second': 32.6}
+2024-11-30 19:55:02,262 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-11-30 19:55:02,268 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-11-30 19:55:02,308 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-11-30 19:55:03,176 - coordinator - INFO - Coordinator listening on port 8000...
+2024-11-30 19:55:12,749 - coordinator - INFO - Received data: {'worker_id': 'worker1', 'metrics': {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}}
+2024-11-30 19:55:13,512 - coordinator - INFO - Received results from Worker worker1: {'error_rate': 0.02, 'avg_response_time': 150.5, 'request_count_per_second': 30}
+2024-12-01 12:00:51,309 - coordinator - INFO - Worker worker1 added with URL http://localhost:8001
+2024-12-01 12:00:51,310 - coordinator - INFO - Worker worker2 added with URL http://localhost:8002
+2024-12-01 12:00:51,310 - coordinator - INFO - Worker worker3 added with URL http://localhost:8003
+2024-12-01 12:00:51,342 - coordinator - INFO - Coordinator listening on port 8000...
+2024-12-01 12:53:58,199 - coordinator - INFO - File test_vectors/logs/normal.log has been split into 4 chunks
+2024-12-01 12:53:58,215 - coordinator - INFO - Sending chunk from 0 to 1 to Worker worker1
+2024-12-01 12:54:00,526 - coordinator - ERROR - Network error while sending chunk to Worker worker1: Cannot connect to host localhost:8001 ssl:default [The remote computer refused the network connection]
+2024-12-01 12:54:00,529 - coordinator - INFO - Sending chunk from 1 to 2 to Worker worker2
+2024-12-01 12:54:02,851 - coordinator - ERROR - Network error while sending chunk to Worker worker2: Cannot connect to host localhost:8002 ssl:default [The remote computer refused the network connection]
+2024-12-01 12:54:02,854 - coordinator - INFO - Sending chunk from 2 to 4 to Worker worker3
+2024-12-01 12:54:05,134 - coordinator - ERROR - Network error while sending chunk to Worker worker3: Cannot connect to host localhost:8003 ssl:default [The remote computer refused the network connection]
+ 
